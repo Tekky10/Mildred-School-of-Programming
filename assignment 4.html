@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 50px 100px;
+        }
+
+        .container {
+            padding: 20px 30px;
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        #container1 {
+            background-color: #ff5733;
+            border: 2px solid black;
+            margin-right: 200px;
+            outline: 5px dashed yellowgreen;
+        }
+
+        #container2 {
+            background-image: url('images/tekky.jpg');
+            background-size: cover;
+            border-left: 4px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            background-image: url('your-list-marker-image-url.png');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 30px;
+        }
+
+        /* For Container 1 (#container1):
+
+            Width: 200px (specified width) + 30px (left padding) + 30px (right padding) + 2px (left border) + 2px (right border) = 264px
+            Height: 300px (specified height) + 20px (top padding) + 20px (bottom padding) = 340px
+            For Container 2 (#container2):
+
+            Width: 200px (specified width) + 30px (left padding) + 30px (right padding) + 4px (left border) = 264px
+            Height: 300px (specified height) + 20px (top padding) + 20px (bottom padding) = 340px
+            So, both containers have a total width of 264px and a total height of 340px, including padding and border.
+        */
+    </style>
+</head>
+<body>
+    <div id="container1" class="container">
+        <!-- Content for Container 1 -->
+    </div>
+    <div id="container2" class="container">
+        <!-- Content for Container 2 -->
+    </div>
+    <ul>
+        <li>Saint</li>
+        <li>Lord of the rings</li>
+        <li>Home Alone</li>
+       
+    </ul>
+
+
+</body>
+</html>

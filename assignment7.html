@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="ass7.css">
+	<title>PhQ Screener Form</title>
+</head>
+<body>
+
+	<h1>Emmanuel Sounyo Assignment 7</h1>
+	<h3>Q1</h3>
+	<form action="phqscreen.php" method="POST" autocomplete="off">
+		<!-- Firstname Section -->
+		<label for="firstname">First Name:</label><br>
+		<input id="firstname" type="text" name="firstname" autofocus required><br>
+
+		<!-- Othername Section -->
+		<label for="othername">Other Name:</label><br>
+		<input id="othername" type="text" name="othername"><br>
+
+		<!-- Lastname Section -->
+		<label for="lastname">Last Name:</label><br>
+		<input id="lastname" type="text" name="lastname" required><br>
+
+		<!-- Email Section -->
+		<label for="E-mail">Last Name:</label><br>
+		<input id="email" type="email" name="email" required><br>
+
+		<!-- Phone Number Section -->
+		<label for="Telephone">Mobile Number:</label><br>
+		<input id="mobile" type="tel" name="mobile" placeholder="+23412-345-67890" pattern="[0-9]{5}-[0-9]{3}-[0-9]{5}"><br>
+
+		<!-- Date_of_Birth Section -->
+		<label for="dob">Date Of Birth:</label><br>
+		<input id="dob" type="date" name="dob"><br>
+
+		<!-- Sex Section -->
+		<label for="sex">Sex:</label><br>
+		<input id="sex" type="radio" value="female">Female<br>
+		<input id="sex" type="radio" value="male">Male<br>
+		<input id="sex" type="radio" value="intersex">Intersex<br>
+
+		<!-- Type of Illness -->
+		<label for="illness_type">Type of Illness</label>
+		<select name="illness_type" id="illness_type">
+			<option selected disabled>{Select One}</option>
+			<option>Infectious diseases</option>
+			<option>Deficiency diseases</option>
+			<option>Hereditary diseases</option>
+			<option>Physiological diseases</option>
+			<option>Other</option>
+		</select><br>
+
+		<!-- order list usage in a form -->
+		<fieldset>
+		<legend>Kindly fill our questionaire</legend>
+			<ol type="I">
+			  	<li><label>Little Interest or Pleasure in doing things:</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="not-at-all" id="not-at-all" >
+			            <label for="not-at-all">Not at all</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="several-days" id="several-days">
+			            <label for="several-days">Several days</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="more-than-half-the-day" id="more-than-half-the-day">
+			            <label for="more-than-half-the-day">More than half the day</label>
+			   	</li>
+			  	<li><label>Feeling down depressed or hopeless:</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="not-at-all" id="not-at-all" >
+			            <label for="not-at-all">Not at all</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="several-days" id="several-days">
+			            <label for="several-days">Several days</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="more-than-half-the-day" id="more-than-half-the-day">
+			            <label for="more-than-half-the-day">More than half the day</label>
+			  	</li>
+			  	<li><label>Trouble Falling Asleep or staying asleep or sleeping too much:</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="not-at-all" id="not-at-all" >
+			            <label for="not-at-all">Not at all</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="several-days" id="several-days">
+			            <label for="several-days">Several days</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="more-than-half-the-day" id="more-than-half-the-day">
+			            <label for="more-than-half-the-day">More than half the day</label>
+			    </li>
+			   	<li><label>Feeling tired or having little energy:</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="not-at-all" id="not-at-all" >
+			            <label for="not-at-all">Not at all</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="several-days" id="several-days">
+			            <label for="several-days">Several days</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="more-than-half-the-day" id="more-than-half-the-day">
+			            <label for="more-than-half-the-day">More than half the day</label>
+			    </li>
+			   	<li><label>Poor Appetite or over eating:</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="not-at-all" id="not-at-all" >
+			            <label for="not-at-all">Not at all</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="several-days" id="several-days">
+			            <label for="several-days">Several days</label>
+			            <input class="radio" type="radio" name="interest-in-things" value="more-than-half-the-day" id="more-than-half-the-day">
+			            <label for="more-than-half-the-day">More than half the day</label>
+			    </li>
+			</ol> 
+        </fieldset><br>
+<!-- Document upload -->
+        <label for="record">Upload Past medical record if any</label><br> 
+        <input type="file" id="record" name="record"><br>   
+
+		<!-- Label for Notes -->
+		<label for="other_information">Other Information</label><br>
+		<textarea id="otherinformation" name="other_information" rows="5" cols="75">Other Information</textarea><br>
+
+		<!--Form fill date -->
+
+		<label for="submission">Date of Form submission</label>
+		<input type="datetime-local" id="submission" name="submission"><br>
+
+		<!--Number of visits -->
+		<label for="visits">Number of medical session</label>
+		<input type="number" step="1"><br>
+
+		<!-- button-->
+		<button type="button" id="submit" name="submit">Submit</button>
+
+	</form>
+	<hr>
+
+	
+    <div class="q2">
+    	<h3>Question 2</h3>
+        <form>
+            <fieldset>
+                <legend>Table 46: PHQ -9 depression Screening</legend>
+                <table class="t2">
+                    <caption>PHQ 9 Nine Questions</caption>
+                    <tr>
+                        <td></td>
+                        <td>Not at all</td>
+                        <td>Several Days</td>
+                        <td>More than half the days</td>
+                        <td>Everyday</td>
+                    </tr>
+                    <tr>
+                        <th>1. Little interest or pleasure in doing things</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>2. Feeling down, depressed or hopeless</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>3. Trouble Falling Asleep or staying asleep or sleeping too much</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>4.Feeling tired or having little energy</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>5. Poor Appetite or over eating</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="tr">
+                        <th>6. Feeling bad about yourself --- <br>Or that you  are a failure Or have let yourself or your family down</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="tr">
+                        <th>7. Trouble concentrating on things, such as reading the newspaper or watching Television</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="tr">
+                        <th>8. Moving or speaking so slowly that other people  could have notice ? <br> Or the Opposite ---being so fidgety or restless that you have been moving around alot more than usual</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr class="tr">
+                        <th>9. Thoughts that you would be better off dead or hurrting yourself in some way</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+<hr>
+
+    <div class="r">
+    	<h4> Student Personal Request </h4>
+    	<table>
+    		<thead>
+			<tr>
+
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Request</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Emmanuel</td>
+				<td>Sounyo</td>
+				<td>emmanuelsounyo@gmail.com</td>
+				<td>I missed the quiz can i get a link to the quiz</td>
+		</tbody>
+		<tfoot>
+			<tr>
+
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Request</th>
+				
+			</tr>
+		</tfoot>
+    	</table>
+    </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+#dance{
+	position: fixed;
+	z-index: -1;
+}
+hr{
+	margin-top: 150px;
+}
+#sprite1 {
+	background: url('Picture2.png') no-repeat -45px -34px;
+	width: 48px;
+	height: 66px;
+	float: left;
+}
+#sprite2 {
+	background: url('Picture2.png') no-repeat -351px -34px;
+	width: 63px;
+	height: 68px;
+	float: right;
+}
+#Sprite3{
+	background: url('Picture2.png') no-repeat -352px -124px;
+	width: 91px;
+	height: 80px;
+}

@@ -1,0 +1,46 @@
+#caption{
+	text-align: center;
+	font-family: sans-serif;
+}
+.replica{
+	width: 60%;
+	border-collapse: collapse;
+}
+.table-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.th,.td{
+	border: solid red;
+	border-width: thick;
+	text-align: center;
+	padding:2px;
+}
+.th{
+	background-color: yellow;
+}
+
+#animelover{
+	overflow-x: auto;
+}
+table.anime{
+	width:100%;
+	border-collapse: collapse;
+}
+.th2, .td2{
+	border: 2px double blue;
+	text-align: center;
+	padding: 3px;
+	border-width: thick;
+	height: 50px;
+}
+.th2{
+	background-color: greenyellow;
+	font-size: bold;
+}
+.td2{
+	font-style: italic;
+	text-align: right;
+}

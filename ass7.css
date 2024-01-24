@@ -1,0 +1,51 @@
+/* styles for Question 2 */
+caption{
+    background-color: blue;
+}
+legend{
+    font-weight: bold;
+}
+
+.q2{
+   margin-top: 50px;
+   font-family: cursive;
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Set left and right margins to auto */
+}
+
+.q2 th{
+    text-align: left;
+}
+
+.q2 td{
+    border: none;
+}
+
+.t2 table {
+    
+}
+
+.q2 input[type="text"] {
+            font-style: italic;
+ }
+
+ /* request */
+ .r{
+    overflow-x: auto;
+    margin-top: 30px;
+}
+.r table{
+    width:100%;
+    border-collapse: collapse;
+}
+.r th, td{
+    border: 2px double blue;
+    text-align: center;
+    padding: 3px;
+}
+.r th{
+    background-color: grey;
+}
+h4{
+    text-align: center;
+}

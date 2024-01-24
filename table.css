@@ -1,0 +1,18 @@
+.div{
+	overflow-x: auto;
+}
+table{
+	width:100%;
+	border-collapse: collapse;
+}
+th, td{
+	border: 2px double blue;
+	text-align: center;
+	padding: 3px;
+}
+th{
+	background-color: grey;
+}
+.col{
+	
+}
